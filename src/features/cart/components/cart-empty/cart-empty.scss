@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // gap: 10px;
-  // animation: fade-in 250ms ease-in;
+  gap: 10px;
+  animation: fade-in 250ms ease-in;
 
   &__text {
     @include h5;
