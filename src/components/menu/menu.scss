@@ -1,0 +1,32 @@
+@use "../../styles/mixins" as *;
+
+@include apply-backdrop(".menu");
+
+.menu {
+  position: absolute;
+  width: 100vw;
+  background-color: var(--white);
+  border-radius: 0 0 8px 8px;
+  margin-inline: auto;
+  left: 0;
+  top: 105px;
+  padding-block: 94px 42px;
+  padding-inline: 40px;
+  animation: fade-in 500ms ease-out;
+
+  &--disabled {
+    pointer-events: none;
+  }
+
+  @include for-phone-only {
+    padding-inline: 24px;
+    padding-block: 52px 42px;
+  }
+
+  &__close-icon {
+    color: var(--white);
+    font-size: 18px;
+    width: 16px;
+    display: block;
+  }
+}
